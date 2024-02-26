@@ -14,8 +14,8 @@ config_file: |
   mmap: true
   threads: 4
   parameters:
-    model: mistral-7b-openorca.Q6_K.gguf
-    temperature: 0.2
+    model: mistral-7b-openorca.Q5_K_S.gguf
+    temperature: 0.3
     top_k: 40
     top_p: 0.95
   template:
@@ -40,6 +40,6 @@ prompt_templates:
     {{.Input}}
     
 files:
-- filename: "mistral-7b-openorca.Q6_K.gguf"
-  sha256: "21dd6b5a62e18dcc2e859315d485707d5df98b6b3a7b2a57ed378bcf790109f9"
-  uri: "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GGUF/resolve/main/mistral-7b-openorca.Q6_K.gguf"
+- filename: "mistral-7b-openorca.Q5_K_S.gguf"
+  sha256: "57f4e4207ba3b6d88f681beb93e3e3a58c6f4e8170fdc5643913d7da24fc59c6"
+  uri: "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GGUF/resolve/main/mistral-7b-openorca.Q5_K_S.gguf"
